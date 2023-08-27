@@ -1,6 +1,7 @@
 from abc import ABC
 from typing import List
 from superagi.tools.base_tool import BaseToolkit
+from superagi.tools.base_tool import BaseTool
 from microsoft_todo_tool import MicrosoftTodoTool
 
 class MicrosoftTodoToolkit(BaseToolkit, ABC):
