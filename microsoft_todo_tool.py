@@ -28,4 +28,7 @@ class MicrosoftTodoTool(BaseTool):
         response = requests.patch(f'https://graph.microsoft.com/v1.0/me/todo/lists/{task_id}', headers=headers, json=data)
         return response.json()
 
+    def _execute(self, *args, **kwargs):
+        pass
+
     # Puedes agregar más métodos según las operaciones que desees realizar con la API
